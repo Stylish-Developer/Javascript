@@ -109,7 +109,7 @@ console.log(
 
 const food3 = ["pizza", "cake", "salad", "cookie"];
 
-console.log("splice method ", food3);
+
 
 const op6 = food3.splice(1, 0, "burrito");
 
