@@ -36,8 +36,19 @@
         <h3>object concepts</h3>
         <p id="object"></p>
       </div>
-      <div id="array-section">
-
+      <div id="array-section"></div>
+    </section>
+    <section>
+      <div>
+        <h1>this in Event Handlers concept</h1>
+        <button id="thisButton" onclick="this.style.color='red'">
+          this concept buttton
+        </button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2 id="wood"></h2>
       </div>
     </section>
   </main>
@@ -50,6 +61,13 @@
   <script src="/src//concepts/events.js"></script>
   <script src="/src/concepts/array-methods.js"></script>
   <script src="/src/concepts/condition-loops.js"></script>
+  <script src="/src/concepts/thiskeyword.js"></script>
+  <script src="/src/concepts/class.js"></script>
+  <script type="module">
+    import { moduleFunction } from "/src/concepts/modules.js";
+
+    document.getElementById("wood").innerHTML = moduleFunction();
+  </script>
 </body>
 
 </html>
