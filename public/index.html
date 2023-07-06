@@ -67,6 +67,33 @@
         DebounceText:
         <p id="debounceText"></p>
       </section>
+      <section>
+        <input type="button" value="alert" onclick="alertFn()" />
+        <input type="button" value="open" onclick="openFn()" />
+        <input type="button" value="prompt" onclick="promptFn()" />
+        <input type="button" value="close" onclick="closeFn()" />
+      </section>
+      <section style="padding: 20px">
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+          <li><a href="#" target="_blank">page 1</a></li>
+          <li>
+            <ul>
+              <li>list 3</li>
+              <li>list 4</li>
+              <li><a href="#" target="_blank">page 1</a></li>
+              <li>
+                <ul>
+                  <li>list 5</li>
+                  <li>list 6</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button id="page1">◀</button>
+      </section>
     </main>
     <footer>
       <p>gowtham@javascript</p>
@@ -86,6 +113,7 @@
     <script src="/src/concepts/array.js"></script>
     <script src="/src/concepts/debounce.js"></script>
     <script src="/src/concepts/dom.js"></script>
+    <script src="/src/concepts/bom.js"></script>
     <script type="module">
       import { moduleFunction } from "/src/concepts/modules.js";
       document.getElementById("wood").innerHTML = moduleFunction();
