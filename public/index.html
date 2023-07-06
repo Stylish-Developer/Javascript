@@ -1,79 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/index.css" rel="stylesheet" />
+    <title>javaScript</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/index.css" rel="stylesheet" />
-  <title>javaScript</title>
-</head>
-
-<body>
-  <header>
-    <h3>javaScript</h3>
-  </header>
-  <main>
-    <section>
-      <div id="root"></div>
-      <button id="fn1" onclick="fn1()">click to open</button>
-    </section>
-    <section>
-      <h3>JS-Introduction</h3>
-      <div id="content">// no content here...</div>
-      <div>
-        <button onclick="changeContent()">change content</button>
-        <button onclick="changeStyle()">change style</button>
-        <button onclick="hideContent()">hide content</button>
-        <button onclick="showContent()">show content</button>
-      </div>
-      <div>
-        <img src="/src/assets/swing-off.gif" id="gif" alt="Files doesn't exist" height="400" width="400" />
+  <body>
+    <header>
+      <h3>javaScript</h3>
+    </header>
+    <main>
+      <section>
+        <div id="root"></div>
+        <button id="fn1" onclick="fn1()">click to open</button>
+      </section>
+      <section>
+        <h3>JS-Introduction</h3>
+        <div id="content">// no content here...</div>
+        <div>
+          <button onclick="changeContent()">change content</button>
+          <button onclick="changeStyle()">change style</button>
+          <button onclick="hideContent()">hide content</button>
+          <button onclick="showContent()">show content</button>
+        </div>
+        <div>
+          <img
+            src="/src/assets/swing-off.gif"
+            id="gif"
+            alt="Files doesn't exist"
+            height="400"
+            width="400"
+          />
+          <br />
+          <button onclick="changeSrcOn()">play swing</button>
+          <button onclick="changeSrcOff()">off swing</button>
+        </div>
+        <div>
+          <h3>object concepts</h3>
+          <p id="object"></p>
+        </div>
+        <div id="array-section"></div>
+      </section>
+      <section>
+        <div>
+          <h1>this in Event Handlers concept</h1>
+          <button id="thisButton" onclick="this.style.color='red'">
+            this concept buttton
+          </button>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="wood"></h2>
+          <p id="mapresult"></p>
+        </div>
+      </section>
+      <section>
+        <h1>Debouncing concept</h1>
+        <input type="text" id="inputText" />
         <br />
-        <button onclick="changeSrcOn()">play swing</button>
-        <button onclick="changeSrcOff()">off swing</button>
-      </div>
-      <div>
-        <h3>object concepts</h3>
-        <p id="object"></p>
-      </div>
-      <div id="array-section"></div>
-    </section>
-    <section>
-      <div>
-        <h1>this in Event Handlers concept</h1>
-        <button id="thisButton" onclick="this.style.color='red'">
-          this concept buttton
-        </button>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2 id="wood"></h2>
-        <p id="mapresult"></p>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>gowtham@javascript</p>
-  </footer>
-  <script src="/index.js"></script>
-  <script src="/src/concepts/html-can-change.js"></script>
-  <script src="/src/concepts/objects.js"></script>
-  <script src="/src//concepts/events.js"></script>
-  <script src="/src/concepts/array-methods.js"></script>
-  <script src="/src/concepts/condition-loops.js"></script>
-  <script src="/src/concepts/thiskeyword.js"></script>
-  <script src="/src/concepts/class.js"></script>
-  <script src="/src/concepts/call.js"></script>
-  <script src="/src/concepts/apply.js"></script>
-  <script src="/src/concepts/bind.js"></script>
-  <script src="/src/concepts/callback-promise-async.js"></script>
-  <script src="/src/concepts/array.js"></script>
-  <script type="module">
-    import { moduleFunction } from "/src/concepts/modules.js";
-
-    document.getElementById("wood").innerHTML = moduleFunction();
-  </script>
-</body>
-
+        Default Text:
+        <p id="defaultText"></p>
+        <br />
+        DebounceText:
+        <p id="debounceText"></p>
+      </section>
+    </main>
+    <footer>
+      <p>gowtham@javascript</p>
+    </footer>
+    <script src="/index.js"></script>
+    <script src="/src/concepts/html-can-change.js"></script>
+    <script src="/src/concepts/objects.js"></script>
+    <script src="/src//concepts/events.js"></script>
+    <script src="/src/concepts/array-methods.js"></script>
+    <script src="/src/concepts/condition-loops.js"></script>
+    <script src="/src/concepts/thiskeyword.js"></script>
+    <script src="/src/concepts/class.js"></script>
+    <script src="/src/concepts/call.js"></script>
+    <script src="/src/concepts/apply.js"></script>
+    <script src="/src/concepts/bind.js"></script>
+    <script src="/src/concepts/callback-promise-async.js"></script>
+    <script src="/src/concepts/array.js"></script>
+    <script src="/src/concepts/debounce.js"></script>
+    <script src="/src/concepts/dom.js"></script>
+    <script type="module">
+      import { moduleFunction } from "/src/concepts/modules.js";
+      document.getElementById("wood").innerHTML = moduleFunction();
+    </script>
+  </body>
 </html>
